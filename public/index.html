@@ -46,7 +46,7 @@
       Gavarapalem,<br> Anakapalli - 531002
     </h3>
   </section>
-
+  <h2>scroll down for images</h2>
   <!-- Gallery Section -->
   <section id="gallery" class="fade-in">
     <h2>Gallery</h2>
@@ -88,7 +88,17 @@
     <p id="view-count">Loading views...</p>
   </section>
   <script src="script.js"></script>
-
+  <script>
+    // Call Vercel serverless function to increase & fetch view count
+    fetch('/api/views', { method: 'POST' })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('view-count').textContent = `Page Views: ${data.views}`;
+      })
+      .catch(() => {
+        document.getElementById('view-count').textContent = 'View count unavailable';
+      });
+  </script>
   
 
 </body>
