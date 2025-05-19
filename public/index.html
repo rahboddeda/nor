@@ -12,7 +12,6 @@
   <meta property="og:title" content="Room Services near Nookambika Temple, Anakapalle" />
   <meta property="og:description" content="Looking for rooms near Nookambika Temple in Anakapalle? View photos, map, and book your stay." />
   <meta property="og:url" content="https://nor-three.vercel.app/" />
-  
   <title>Nookambika Rooms</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -20,7 +19,7 @@
 
   <!-- Circle Images (above navbar) -->
   <div class="circle-images">
-    <img src="1.jpg" width="150px" height="150px" style="border-radius: 50%; object-fit: cover;" alt="Profile 1" />
+   <img src="1.jpg" width="100%" height="150px" style="overflow: hidden; object-fit: cover; border-radius: 100%;" alt="Profile 1" />
   </div>
 
   <!-- Navigation Bar -->
@@ -71,40 +70,36 @@
     </div>
   </section>
 
+  <!-- Page View Counter Display -->
+  <section id="view-section" style="text-align:center; margin: 20px 0;">
+    <p id="view-count">Loading views...</p>
+  </section>
+
   <!-- Lightbox -->
   <div id="lightbox" class="lightbox">
     <img src="" alt="Expanded View" />
   </div>
 
-  <!-- Contact Again -->
-  <section class="fade-in">
+  <section id="contact" class="fade-in">
     <h2>Contact us: <br>
       Phone : 7013269292<br>
       Gavarapalem,<br> Anakapalli - 531002
     </h2>
   </section>
 
-  <!-- Page View Counter -->
-  <section style="text-align:center; margin: 20px 0;">
-    <p>Page Views: <span id="page-views">Loading...</span></p>
-  </section>
-
   <script src="script.js"></script>
 
-  <!-- Page View Counter Script -->
   <script>
-    const counterUrl = 'https://api.countapi.xyz/update/nookambika/roomviews/?amount=1';
-    const getCounterUrl = 'https://api.countapi.xyz/get/nookambika/roomviews/';
-
-    fetch(counterUrl)
-      .then(() => fetch(getCounterUrl))
-      .then(response => response.json())
+    // Call Vercel serverless function to increase & fetch view count
+    fetch('/api/views', { method: 'POST' })
+      .then(res => res.json())
       .then(data => {
-        document.getElementById('page-views').innerText = data.value;
+        document.getElementById('view-count').textContent = `Page Views: ${data.views}`;
       })
       .catch(() => {
-        document.getElementById('page-views').innerText = "Error";
+        document.getElementById('view-count').textContent = 'View count unavailable';
       });
   </script>
+
 </body>
 </html>
