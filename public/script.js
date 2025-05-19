@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     // 2. Call page view increment API
-    await fetch("/views", {
-      method: "POST"
-    });
+    // await fetch("/views", {
+    //   method: "POST"
+    // });
 
   } catch (error) {
     console.error("Failed to load images or update views:", error);
