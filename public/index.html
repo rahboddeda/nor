@@ -91,7 +91,7 @@
 
   <script>
     // Call Vercel serverless function to increase & fetch view count
-    fetch('/api/views', { method: 'POST' })
+    fetch('/views', { method: 'POST' })
       .then(res => res.json())
       .then(data => {
         document.getElementById('view-count').textContent = `Page Views: ${data.views}`;
