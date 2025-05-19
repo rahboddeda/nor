@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const container = document.getElementById("image-container");
 
   try {
-    const res = await fetch("/images");
+    // 1. Fetch images
+    const res = await fetch("/api/images");
     const images = await res.json();
 
     images.forEach(image => {
@@ -18,11 +19,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.appendChild(img);
       container.appendChild(card);
     });
+
+    // 2. Call page view increment API
+    await fetch("/api/views", {
+      method: "POST"
+    });
+
   } catch (error) {
-    console.error("Failed to load images:", error);
+    console.error("Failed to load images or update views:", error);
   }
 
-  // Scroll animation
+  // Scroll animation observer
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -35,17 +42,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 });
 
+// Lightbox functions unchanged
 function openLightbox(src) {
-  // If lightbox already exists, remove it first
   const oldLightbox = document.getElementById("lightbox");
   if (oldLightbox) oldLightbox.remove();
 
-  // Create new lightbox
   const lightbox = document.createElement("div");
   lightbox.id = "lightbox";
   lightbox.className = "lightbox";
 
-  // Inner content
   lightbox.innerHTML = `
     <div class="lightbox-content">
       <button class="close-btn">&times;</button>
@@ -56,12 +61,10 @@ function openLightbox(src) {
   document.body.appendChild(lightbox);
   lightbox.classList.add("visible");
 
-  // Close on X button
   lightbox.querySelector(".close-btn").addEventListener("click", () => {
     closeLightbox();
   });
 
-  // Close when clicking outside the image
   lightbox.addEventListener("click", (e) => {
     const content = lightbox.querySelector(".lightbox-content");
     if (!content.contains(e.target)) {
@@ -70,7 +73,6 @@ function openLightbox(src) {
   });
 }
 
-// Close lightbox function
 function closeLightbox() {
   const lightbox = document.getElementById("lightbox");
   if (lightbox) {
@@ -78,5 +80,3 @@ function closeLightbox() {
     setTimeout(() => lightbox.remove(), 200);
   }
 }
-
-
