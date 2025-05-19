@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // 1. Fetch images
-    const res = await fetch("/api/images");
+    const res = await fetch("/images");
     const images = await res.json();
 
     images.forEach(image => {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     // 2. Call page view increment API
-    await fetch("/api/views", {
+    await fetch("/views", {
       method: "POST"
     });
 
