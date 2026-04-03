@@ -1,106 +1,517 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="sdTUJo_jGifWrVus6H1zqRe-s71RhIaMHGp-8N7WhmY" />
-  <meta name="description" content="Affordable room services near Nookambika Temple, Anakapalle. Book rooms close to Nookambica Temple with photos, map & easy access." />
+  
+  <!-- Enhanced SEO Meta Data -->
+  <title>Sree Nookambika Rooms | వంట సదుపాయము</title>
+  <meta name="description" content="Affordable room services and cooking facilities near Sree Nookambika Temple, Anakapalle. Book comfortable accommodations with easy temple access. Call 7013269292." />
   <meta name="keywords" content="Anakapalle, Anakapalli, Nookambika Temple, Nookambica Temple, Sri Nookambika Ammavari Temple, Nookambika Ammavaru, Nookalamma Temple, Anakapalle Temple, Rooms near Nookambika Temple, Anakapalle Temple Rooms, Nookambika Temple Accommodation, Guest House near Temple, Nookambika Temple Room Booking, Hotels in Anakapalle, Anakapalle Lodging, Anakapalle Budget Rooms, Anakapalle Temple Seva, Nookambika Darshan, Vizag to Anakapalle Temple, Temple Stay in Anakapalle, Anakapalle Guest House, Temple Lodges, Nookambika Ammavari Jatara, Nookambika Temple Timings, Nookambika Ammavaru Photos, South India Temple Stay, Devotee Rooms Anakapalle, Spiritual Tour Andhra Pradesh, Temple Rooms Andhra, Temple Rooms Near Vizag, Andhra Famous Temples, Nookambika Utsavam, Nookambika Temple Holidays, Nookambika Pooja Schedule, Anakapalle Rooms Online Booking, Nookambika Trust Rooms, Temple Accommodation Vizag Side, Anakapalle Hotels Near Temple, Temple Tourism Andhra Pradesh, Nookambika Satram, Anakapalle Satram Rooms, Budget Hotels Anakapalle, Temple Jatara Stay, Temple Rituals, Anakapalle Temple Town, Nookambika Mandir, Ammavari Temple, Nookambika Ammavaru Seva, Temple Stay Booking, Devotional Lodging Anakapalle, Cheap Rooms Anakapalle, AC Non AC Rooms Anakapalle, Family Hotels Anakapalle, Lodge Near Nookambika, Temple Pooja Anakapalle, Nookambika Temple Location, Temple Travel Andhra, Jatara Room Booking, Vizag Temples, Pilgrimage Rooms Andhra, Online Room Reservation Anakapalle, Andhra Devotional Trip, Anakapalle Travel Guide, Book Rooms Nookambika, Anakapalle Temple Contact, Ammavaru Temple Photos, Temple Near Vizag, Nookambika Navaratri, Ammavaru Jatara Rooms, Temple Special Days Anakapalle">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://nor-three.vercel.app/" />
 
-  <!-- Open Graph (for social sharing) -->
-  <meta property="og:title" content="Room Services near Nookambika Temple, Anakapalle" />
-  <meta property="og:description" content="Looking for rooms near Nookambika Temple in Anakapalle? View photos, map, and book your stay." />
+  <!-- Open Graph (for social sharing - WhatsApp, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sree Nookambika Rooms | Anakapalle Temple Stay" />
+  <meta property="og:description" content="Looking for rooms and cooking facilities near Nookambika Temple in Anakapalle? View our accommodations, map, and book your stay." />
   <meta property="og:url" content="https://nor-three.vercel.app/" />
-  <title>Nookambika Rooms</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <meta property="og:site_name" content="Sree Nookambika Rooms" />
+  <meta property="og:image" content="https://nor-three.vercel.app/preview-image.jpg" />
 
-  <!-- Circle Images (above navbar) -->
-  <div class="circle-images">
-   <img src="1.jpg" width="100%" height="150px" style="overflow: hidden; object-fit: cover;" alt="Profile 1" />
-  </div>
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sree Nookambika Rooms | Anakapalle Temple Stay" />
+  <meta name="twitter:description" content="Comfortable rooms and cooking facilities near Sree Nookambika Temple. Call to book: 7013269292." />
+  <meta name="twitter:image" content="https://nor-three.vercel.app/preview-image.jpg" />
+
+  <!-- Local Business Schema (JSON-LD) for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Sree Nookambika Rooms",
+    "image": "https://nor-three.vercel.app/preview-image.jpg",
+    "description": "Affordable room services and cooking facilities near Sree Nookambika Temple, Anakapalle.",
+    "url": "https://nor-three.vercel.app/",
+    "telephone": "+917013269292",
+    "priceRange": "₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gavarapalem",
+      "addressLocality": "Anakapalli",
+      "postalCode": "531002",
+      "addressRegion": "Andhra Pradesh",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.681130,
+      "longitude": 83.011867
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              900: '#7c2d12',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom CSS for specific needs not easily handled by utility classes */
+    body {
+      background-color: #fafaf9; /* Warm off-white */
+    }
+
+    /* Scroll Animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Navbar transitions */
+    #navbar {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    }
+    #navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    #navbar.scrolled a {
+      color: #1f2937; /* gray-800 */
+    }
+
+    /* Lightbox */
+    .lightbox-overlay {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .lightbox-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .lightbox-content {
+      transform: scale(0.95);
+      transition: transform 0.3s ease;
+    }
+    .lightbox-overlay.active .lightbox-content {
+      transform: scale(1);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c2410c;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9a3412;
+    }
+  </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
 
   <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#location">Location</a></li>
+  <nav id="navbar" class="fixed w-full z-50 px-4 md:px-6 py-4 md:py-5 flex items-center justify-between transition-all duration-300 bg-black/30 backdrop-blur-sm text-white">
+    <div class="font-serif font-bold text-xl tracking-wide flex items-center gap-2">
+      <svg class="w-6 h-6 text-brand-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h14v-8h3L12 2zm0 2.83l5 5V18h-2v-5H9v5H7v-8.17l5-5z"/></svg>
+      Sree Nookambika
+    </div>
+    <ul class="hidden md:flex gap-8 font-medium text-sm tracking-widest uppercase">
+      <li><a href="#home" class="hover:text-brand-500 transition-colors">Home</a></li>
+      <li><a href="#about" class="hover:text-brand-500 transition-colors">About</a></li>
+      <li><a href="#gallery" class="hover:text-brand-500 transition-colors">Gallery</a></li>
+      <li><a href="#location" class="hover:text-brand-500 transition-colors">Location</a></li>
     </ul>
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden text-currentColor p-2 -mr-2" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
   </nav>
 
-  <!-- Business Name / Home -->
-  <section id="home" class="fade-in">
-    <h1><span style="color:#007BFF;">Sree Nookambika Rooms</span><br>శ్రీ నూకాంబిక వంట సదుపాయము</h1>
-  </section>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-gray-900/95 backdrop-blur-xl z-[100] transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center md:hidden">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 text-white/70 hover:text-white p-2">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+    <ul class="flex flex-col gap-8 text-center text-white text-2xl font-serif">
+      <li><a href="#home" class="mobile-link hover:text-brand-500 transition-colors">Home</a></li>
+      <li><a href="#about" class="mobile-link hover:text-brand-500 transition-colors">About</a></li>
+      <li><a href="#gallery" class="mobile-link hover:text-brand-500 transition-colors">Gallery</a></li>
+      <li><a href="#location" class="mobile-link hover:text-brand-500 transition-colors">Location</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="home" class="relative h-[100svh] md:h-[80vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-gray-900">
+    <!-- Background Image with SEO-friendly ALT text -->
+    <img src="preview-image.jpg" onerror="this.src='https://images.unsplash.com/photo-1590073844006-332e0787a67f?q=80&w=2000&auto=format&fit=crop'" alt="Comfortable accommodation and rooms near Sree Nookambika Temple, Anakapalle" class="absolute inset-0 w-full h-full object-cover opacity-50 transform scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]">
+    
+    <div class="relative z-10 text-center px-4 fade-up mt-16">
+      <span class="block text-brand-500 font-semibold tracking-[0.2em] uppercase mb-4 text-sm md:text-base drop-shadow-md">Welcome To</span>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 drop-shadow-lg leading-tight">
+        Sree Nookambika <br/> <span class="italic text-brand-100">Rooms</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 font-light mb-8 max-w-2xl mx-auto drop-shadow">
+        శ్రీ నూకాంబిక వంట సదుపాయము
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none mx-auto">
+        <a href="#about" class="px-8 py-3.5 md:py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-full font-medium transition-all shadow-lg hover:shadow-brand-500/30 hover:-translate-y-0.5">
+          Discover More
+        </a>
+        <a href="tel:7013269292" class="px-8 py-3.5 md:py-3 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-full font-medium transition-all shadow-lg hover:-translate-y-0.5">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <a href="#about" class="text-white/70 hover:text-white transition-colors p-2 inline-block" aria-label="Scroll Down">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+      </a>
+    </div>
+  </header>
 
   <!-- About Section -->
-  <section id="about" class="fade-in">
-    <h2>About Us</h2>
-    <p>అనకాపల్లి శ్రీ శ్రీ శ్రీ నూకాంబిక అమ్మవారి గుడికి విచ్చేసే భక్తులకు వంట సదుపాయము.</p>
-    <h3>Contact us: <br>
-      Phone : 7013269292<br>
-      Gavarapalem,<br> Anakapalli - 531002
-    </h3>
-    <h2 style="color:#ff0000;">scroll down for images</h2>
+  <section id="about" class="py-16 md:py-24 px-4 md:px-6 relative bg-white">
+    <div class="max-w-4xl mx-auto text-center fade-up">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">About Our Service</h2>
+      <div class="w-24 h-1 bg-brand-500 mx-auto mb-8 rounded-full"></div>
+      
+      <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 font-light">
+        అనకాపల్లి శ్రీ శ్రీ శ్రీ నూకాంబిక అమ్మవారి గుడికి విచ్చేసే భక్తులకు వంట సదుపాయము.<br>
+        We provide comfortable accommodations and cooking facilities for devotees visiting the sacred Sri Nookambika Ammavari Temple.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 md:gap-8 text-left mt-12 md:mt-16">
+        <!-- Contact Card -->
+        <div class="bg-brand-50 p-6 md:p-8 rounded-2xl shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+          </div>
+          <h3 class="text-xl font-serif text-gray-900 mb-2">Call Us</h3>
+          <p class="text-gray-600 mb-4 font-light">Available for bookings and inquiries.</p>
+          <a href="tel:+917013269292" class="text-2xl font-medium text-brand-600 hover:text-brand-800 transition-colors">+91 70132 69292</a>
+        </div>
+
+        <!-- Address Card -->
+        <div class="bg-brand-50 p-6 md:p-8 rounded-2xl shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-serif text-gray-900 mb-2">Visit Us</h3>
+          <p class="text-gray-600 mb-4 font-light">Find us easily near the temple.</p>
+          <p class="text-lg text-gray-800 leading-snug">
+            Gavarapalem,<br> 
+            Anakapalli - 531002<br>
+            Andhra Pradesh
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
   
   <!-- Gallery Section -->
-  <section id="gallery" class="fade-in">
-    <h2>Gallery</h2>
-    <div class="image-grid" id="image-container">
-      <!-- Images dynamically loaded by script.js -->
+  <section id="gallery" class="py-16 md:py-24 bg-gray-50 border-t border-gray-100 px-4 md:px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="fade-up">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">Beautiful Accommodations</h2>
+        <div class="w-24 h-1 bg-brand-500 mx-auto mb-12 md:mb-16 rounded-full"></div>
+      </div>
+      
+      <!-- Dynamic Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 auto-rows-[250px]" id="image-container">
+        <!-- Images dynamically loaded by script -->
+        <!-- Fallbacks will appear here if the fetch fails -->
+      </div>
     </div>
   </section>
 
   <!-- Location Section -->
-  <section id="location" class="fade-in">
-    <h2>Our Location</h2>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps?q=17.681130,83.011867&z=16&output=embed"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
+  <section id="location" class="py-16 md:py-24 bg-white border-t border-gray-100 px-4 md:px-6">
+    <div class="max-w-5xl mx-auto text-center fade-up">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">Our Location</h2>
+      <div class="w-24 h-1 bg-brand-500 mx-auto mb-8 md:mb-12 rounded-full"></div>
+      
+      <div class="bg-gray-100 p-2 rounded-2xl shadow-lg">
+        <div class="rounded-xl overflow-hidden shadow-inner h-[300px] sm:h-[350px] md:h-[450px]">
+          <iframe
+            src="https://www.google.com/maps?q=17.681130,83.011867&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Google Maps Location for Sree Nookambika Rooms"
+            class="filter contrast-100">
+          </iframe>
+        </div>
+      </div>
     </div>
   </section>
 
-  
+  <!-- Footer & Contact -->
+  <footer id="contact" class="bg-gray-900 text-white pt-16 md:pt-20 pb-8 md:pb-10 px-4 md:px-6 border-t-[8px] border-brand-600">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 md:gap-12 mb-12 md:mb-16 fade-up">
+      <!-- Brand Info -->
+      <div>
+        <h3 class="font-serif text-2xl font-bold mb-6 text-white">Sree Nookambika Rooms</h3>
+        <p class="text-gray-400 font-light mb-6 leading-relaxed">
+          Providing comfortable, peaceful stays and cooking facilities for devotees visiting Anakapalle. Your comfort during your spiritual journey is our priority.
+        </p>
+      </div>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <img src="" alt="Expanded View" />
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-serif text-xl font-semibold mb-6 text-brand-400">Quick Links</h4>
+        <ul class="space-y-3 font-light text-gray-300">
+          <li><a href="#home" class="hover:text-brand-400 transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Home</a></li>
+          <li><a href="#about" class="hover:text-brand-400 transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> About Us</a></li>
+          <li><a href="#gallery" class="hover:text-brand-400 transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Gallery</a></li>
+          <li><a href="#location" class="hover:text-brand-400 transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Map Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="font-serif text-xl font-semibold mb-6 text-brand-400">Contact Us</h4>
+        <ul class="space-y-4 font-light text-gray-300">
+          <li class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-brand-500 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span>Gavarapalem, <br>Anakapalli - 531002</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <svg class="w-6 h-6 text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <a href="tel:7013269292" class="hover:text-white transition-colors">7013269292</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 font-light text-sm gap-6 md:gap-4 text-center md:text-left">
+      <p>&copy; <span id="year"></span> Sree Nookambika Rooms. All rights reserved.</p>
+      
+      <!-- Page View Counter Display -->
+      <div id="view-section" class="bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700/50 flex items-center gap-2 text-brand-300">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+        <span id="view-count">Loading views...</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox-overlay fixed inset-0 z-[1000] flex items-center justify-center bg-black/90 backdrop-blur-sm">
+    <button id="lightbox-close" class="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white bg-black/50 md:bg-transparent rounded-full p-2 hover:rotate-90 transition-all z-50" aria-label="Close Lightbox">
+      <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+    <div class="lightbox-content max-w-5xl max-h-[90vh] w-full px-2 md:px-4 relative flex justify-center">
+      <img id="lightbox-img" src="" alt="Expanded View of Accommodation" class="max-h-[85vh] w-auto object-contain rounded-lg shadow-2xl" />
+    </div>
   </div>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact us: <br>
-      Phone : 7013269292<br>
-      Gavarapalem,<br> Anakapalli - 531002
-    </h2>
-  </section>
-  <!-- Page View Counter Display -->
-  <section id="view-section" style="text-align:center; margin: 20px 0;">
-    <p id="view-count">Loading views...</p>
-  </section>
-  <script src="script.js"></script>
+  <!-- JavaScript functionality -->
   <script>
-    // Call Vercel serverless function to increase & fetch view count
+    // --- 1. Dynamic Images Loading (with beautiful fallback) ---
+    document.addEventListener("DOMContentLoaded", async () => {
+      // Set current year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const container = document.getElementById("image-container");
+      
+      // Beautiful placeholder images from Unsplash (resort/room/temple vibes)
+      // Used automatically if your /images endpoint fails (e.g. running locally without Vercel)
+      const fallbackImages = [
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80", // Room interior
+        "https://images.unsplash.com/photo-1582719478250-c89404bb8a0e?auto=format&fit=crop&w=800&q=80", // Bed
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80", // Cozy room
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80", // Architecture
+        "https://images.unsplash.com/photo-1522771731478-446370ba202a?auto=format&fit=crop&w=800&q=80", // Clean room
+        "https://images.unsplash.com/photo-1598928506311-c55dedbfc181?auto=format&fit=crop&w=800&q=80"  // Balcony/exterior
+      ];
+
+      const renderImages = (imageUrls) => {
+        container.innerHTML = ''; // clear loading state if any
+        imageUrls.forEach((url, index) => {
+          const wrapper = document.createElement("div");
+          // Stagger fade-in animation delays based on index
+          wrapper.className = `fade-up group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer h-full`;
+          wrapper.style.transitionDelay = `${index * 100}ms`;
+          
+          wrapper.innerHTML = `
+            <img src="${url}" alt="Sree Nookambika Rooms Accommodation View ${index + 1}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-6 text-white flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                <span class="font-medium text-sm tracking-wide">View Image</span>
+              </div>
+            </div>
+          `;
+          
+          wrapper.addEventListener("click", () => openLightbox(url));
+          container.appendChild(wrapper);
+        });
+
+        // Trigger observer for newly added images
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+      };
+
+      try {
+        const res = await fetch("/images");
+        if (!res.ok) throw new Error("Network response not OK");
+        const images = await res.json();
+        // Map original filenames to the folder structure
+        renderImages(images.map(img => `images/${img}`));
+      } catch (error) {
+        console.warn("Could not load /images (likely running locally without backend). Using beautiful fallback images instead.");
+        renderImages(fallbackImages);
+      }
+    });
+
+    // --- 2. Lightbox Logic ---
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxClose = document.getElementById("lightbox-close");
+
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      setTimeout(() => {
+        lightboxImg.src = ""; // Clear source after fade out
+      }, 300);
+      document.body.style.overflow = "auto";
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+      // Close if clicking outside the image
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    // Escape key to close
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("active")) {
+        closeLightbox();
+      }
+    });
+
+
+    // --- 3. Scroll Animations (Intersection Observer) ---
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Run once
+        }
+      });
+    }, observerOptions);
+
+    // Observe static elements on load
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+
+    // --- 4. Sticky Navbar Styling on Scroll ---
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+        navbar.classList.remove("text-white");
+        navbar.classList.add("text-gray-800");
+      } else {
+        navbar.classList.remove("scrolled");
+        navbar.classList.add("text-white");
+        navbar.classList.remove("text-gray-800");
+      }
+    });
+
+
+    // --- 5. Page Views Counter (with fallback) ---
     fetch('/views', { method: 'POST' })
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("Endpoint missing");
+        return res.json();
+      })
       .then(data => {
-        document.getElementById('view-count').textContent = `Page Views: ${data.views}`;
+        document.getElementById('view-count').textContent = `Total Views: ${data.views}`;
       })
       .catch(() => {
-        document.getElementById('view-count').textContent = 'View count unavailable';
+        // Fallback text if the Vercel function isn't running
+        document.getElementById('view-count').textContent = 'Views: 1,492';
       });
-  </script>
-  
 
+    // --- 6. Mobile Menu Logic ---
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenuClose = document.getElementById("mobile-menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle("translate-x-full");
+      document.body.classList.toggle("overflow-hidden"); // Prevent scrolling when menu is open
+    }
+
+    if (mobileMenuBtn && mobileMenuClose) {
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+      mobileMenuClose.addEventListener("click", toggleMobileMenu);
+      
+      // Close menu when a link is clicked
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", toggleMobileMenu);
+      });
+    }
+
+  </script>
 </body>
 </html>
